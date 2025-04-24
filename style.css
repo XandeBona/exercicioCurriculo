@@ -2,26 +2,18 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(4, 4, 4);
+    background-color: rgb(12, 12, 12);
     color: white;
 }
 
-/* Alterando o nome presente no header */
-#nome-menu {
-    font-size: 20px;
-    color: white;
-    margin-left: 20px;
-}
-
-/* Espaçamento entre o nome e o restante do menu */
-.div-menu {
-    margin-left: 55%;
+nav {
+    padding: 0;
 }
 
 /* Alterando menu (tamanho e cor) */
 .menu {
     background-color: rgb(2, 112, 88);
-    padding: 15px;
+    padding: 20px;
 }
 
 /* Remover enfeites do ul e deixando do lado do nome do menu */
@@ -39,29 +31,57 @@ body {
 
 /* Alterando espaçamento das opções do menu */
 .menu ul li a {
-    padding: 30px;
+    padding: 25px;
     color: white;
+    text-decoration: none;
+    transition: all .5s;
 }
 
+.menu a:hover {
+    background-color: rgb(11, 134, 108);
+    color: rgb(212, 212, 212);
+}
+
+/* Alterando o nome presente no header */
+#nome-menu {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    margin-left: 3%;
+}
+
+/* Espaçamento entre o nome e o restante do menu */
+.div-menu {
+    margin-left: 55%;
+}
+
+/* Deixa a div principal centralizada */
 .principal {
     text-align: center;
 }
 
 .foto-arredondada {
+    margin-top: 20px;
     border-radius: 50%;
     box-shadow: 3px 3px 5px 1px rgb(0, 0, 0);
     transition: all 1s;
+    width: 120px;
 }
 
 .foto-arredondada:hover {
     box-shadow: 3px 3px 5px 1px rgb(7, 70, 95);
 }
 
-header {
-    position: flex;
-}
 
-ul {
+.div-conhecimentos ul {
     list-style-type: none;
     padding: 0;
+}
+
+
+footer {
+    background-color: black;
+    margin-top: 50px;
+    text-align: center;
+    padding: 3px;
 }
